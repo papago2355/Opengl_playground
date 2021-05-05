@@ -103,7 +103,7 @@ void drawRightArm()
 
 
 
-	//¹°Ã¼ push ÈÄ popÀ¸·Î ½ÃÁ¡ ÃÊ±âÈ­
+	//ë¬¼ì²´ push í›„ popìœ¼ë¡œ ì‹œì  ì´ˆê¸°í™”
 
 
 
@@ -125,7 +125,7 @@ void MyDisplay()
 
 {
 
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);//display ÇÔ¼ö¿¡ ±íÀÌ ¹öÆÛ ÃÊ±âÈ­ ÄÚµå »ğÀÔ (±íÀÌ ¹öÆÛ ÃÊ±âÈ­ÇÔ)
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);//display í•¨ìˆ˜ì— ê¹Šì´ ë²„í¼ ì´ˆê¸°í™” ì½”ë“œ ì‚½ì… (ê¹Šì´ ë²„í¼ ì´ˆê¸°í™”í•¨)
 
 	glBegin(GL_LINES);
 
@@ -138,11 +138,11 @@ void MyDisplay()
 	glEnd();
 
 
-	// ¸öÅë À§¿¡¼­ ±¸Çö
+	// ëª¸í†µ ìœ„ì—ì„œ êµ¬í˜„
 	
 	drawBody();
 
-	// ÆÈ
+	// íŒ”
 
 	//drawLeftArm();
 
@@ -164,15 +164,15 @@ void reshape(int  w,int  h) {
 
 	glLoadIdentity();
 
-	//glOrtho(-1, 1, -1, 1, -1, 2); //ÆòÇàÅõ»ó 
-	//gluPerspective(60, 1.0, 0.1, 40.0); //½Ã¾ß°¢ fovy, Á¾È¾ºñ aspect, near, far
+	//glOrtho(-1, 1, -1, 1, -1, 2); //í‰í–‰íˆ¬ìƒ 
+	//gluPerspective(60, 1.0, 0.1, 40.0); //ì‹œì•¼ê° fovy, ì¢…íš¡ë¹„ aspect, near, far
 	gluPerspective(45.0, 1.0, 1.0, 100.0); 
 	glMatrixMode(GL_MODELVIEW);
 
 	glLoadIdentity();
 	
 
-	gluLookAt(1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0); //(Ä«¸Ş¶ó À§Ä¡, º¸´Â Á¡, Ä«¸Ş¶ó ¸Ó¸®)
+	gluLookAt(1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0); //(ì¹´ë©”ë¼ ìœ„ì¹˜, ë³´ëŠ” ì , ì¹´ë©”ë¼ ë¨¸ë¦¬)
 
 }
 
